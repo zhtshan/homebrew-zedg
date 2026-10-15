@@ -1,13 +1,13 @@
 cask "zedg" do
-  version "1.23.3"
+  version "1.24.2"
 
   on_arm do
-    url "https://github.com/zhtshan/zed-globalization/releases/download/v1.23.3/zedg-zh-cn-macos-aarch64-v1.23.3.dmg"
-    sha256 "5c361e5ba934bbc57f24443dd084ec07d8dcbaffcabf16f33f50d74e7c39ee79"
+    url "https://github.com/zhtshan/zed-globalization/releases/download/v1.24.2/zedg-zh-cn-macos-aarch64-v1.24.2.dmg"
+    sha256 "5f2b72b35bf6196f81323954d1eb2dca190e2b9086cdc8f5f821dd10fb993dd9"
   end
   on_intel do
-    url "https://github.com/zhtshan/zed-globalization/releases/download/v1.23.3/zedg-zh-cn-macos-x86_64-v1.23.3.dmg"
-    sha256 "a77f3d4ab6dd1ba495c2f884909e9322832f844fcfb37d8aef13c70e7656d1b1"
+    url "https://github.com/zhtshan/zed-globalization/releases/download/v1.24.2/zedg-zh-cn-macos-x86_64-v1.24.2.dmg"
+    sha256 "d6d42caa43db8190d85c1d653169c87296dc14b1083893671da9ccfcd309f2e9"
   end
 
   name "ZedG"
@@ -25,7 +25,7 @@ cask "zedg" do
 
   zap trash: [
     "~/Library/Application Support/Zed",
-    "~/Library/Caches/dev.zed.ZedG",
-    "~/Library/Preferences/dev.zed.ZedG.plist",
+    "~/Library/Caches/dev.zed.Zed",
+    "~/Library/Preferences/dev.zed.Zed.plist",
   ]
 end
