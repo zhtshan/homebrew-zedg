@@ -14,13 +14,12 @@ cask "zedg" do
   desc "Zed Editor (Localized / 汉化版)"
   homepage "https://github.com/zhtshan/zed-globalization"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "ZedG.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{appdir}/ZedG.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-rd", "com.apple.quarantine", "{{appdir}}/ZedG.app"]
   end
 
   zap trash: [
